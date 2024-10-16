@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<input type="text" id="td" placeholder="tìm kiếm tại đây">
+<input type="button" value="Tìm Kiếm" onclick="getData()">
+<p id="result"></p>
+<script>
+  function getData() {
+    let td = document.getElementById("td").value;
+    let eng = ['Banana', 'Orange', 'Mango', 'Grape'];
+    let vn = ['chuoi','cam','xoai','nho']
+    let index_eng = 0;
+    let result = [];
+    for (let i = 0; i < td.length; i++) {
+      if (td == eng[i]) {
+        index_eng = i;
+        for (let j = 0; j < vn.length; j++) {
+          if (index_eng == j) {
+            result= vn[j];
+          }
+        }
+      }
+    }
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+</body>
+</html>
