@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B3</title>
+</head>
+<body>
+<script>
+    let str = prompt('');
+    let HOA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let thuong = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i < str.length; i++) {
+        if (HOA.indexOf(str[i]) !==-1){
+            result.push(str[i].toLowerCase());
+        }
+        else if (thuong.indexOf(str[i]) !==-1){
+            result.push(str[i].toUpperCase());
+
+        }
+        else {
+            result.push(str[i]);
+        }
+    }
+console.log(result.join(''));
+
+</script>
+</body>
+</html>
