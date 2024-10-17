@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Khởi tạo hai mảng số nguyên a và b
+  let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Bạn có thể thay đổi các giá trị này
+  let b = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]; // Bạn có thể thay đổi các giá trị này
+
+  // Khởi tạo mảng c với kích thước 20 phần tử
+  let c = new Array(20);
+
+  // Nối các phần tử của mảng b và a vào mảng c
+  for (let i = 0; i < 10; i++) {
+    c[i] = b[i];
+    c[i + 10] = a[i];
+  }
+
+  // Hiển thị mảng c
+  console.log("Mảng c sau khi nối:", c);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đếm số nguyên âm</title>
+</head>
+<body>
+
+<h2>Đếm số nguyên âm trong một chuỗi</h2>
+<input type="text" id="inputString" placeholder="Nhập chuỗi vào đây">
+<button onclick="countVowels()">Đếm nguyên âm</button>
+<p id="result"></p>
+
+<script>
+  function countVowels() {
+    const inputString = document.getElementById("inputString").value.toLowerCase(); // Lấy chuỗi và chuyển về chữ thường
+    const vowels = ['a', 'e', 'i', 'o', 'u']; // Mảng chứa nguyên âm
+    let count = 0;
+
+    // Duyệt qua từng ký tự trong chuỗi và kiểm tra có phải nguyên âm không
+    for (let char of inputString) {
+      if (vowels.includes(char)) {
+        count++;
+      }
+    }
+
+    // Hiển thị kết quả
+    document.getElementById("result").textContent = "Số nguyên âm: " + count;
+  }
+</script>
+
+</body>
+</html>

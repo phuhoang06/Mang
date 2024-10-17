@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b5c9d88-c531-49e9-9645-800a6a8e5a84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BT2/BT2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/Bt5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/Bt6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/Bt7.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,27 +50,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.BT1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.BT2.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.BT3.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.TH1.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.TH2.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.TH3.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.TH4.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.TH5.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.BT1.html.executor": "Run",
+    "JavaScript Debug.BT2.html.executor": "Run",
+    "JavaScript Debug.BT3.html.executor": "Run",
+    "JavaScript Debug.BT4.html.executor": "Run",
+    "JavaScript Debug.Bt5.html.executor": "Run",
+    "JavaScript Debug.Bt6.html.executor": "Debug",
+    "JavaScript Debug.TH1.html.executor": "Run",
+    "JavaScript Debug.TH2.html.executor": "Run",
+    "JavaScript Debug.TH3.html.executor": "Run",
+    "JavaScript Debug.TH4.html.executor": "Run",
+    "JavaScript Debug.TH5.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +93,9 @@
       <workItem from="1729041231624" duration="8892000" />
       <workItem from="1729060672497" duration="8273000" />
       <workItem from="1729073318162" duration="878000" />
-      <workItem from="1729127641293" duration="943000" />
+      <workItem from="1729127641293" duration="5826000" />
+      <workItem from="1729137035020" duration="1998000" />
+      <workItem from="1729146880404" duration="3735000" />
     </task>
     <servers />
   </component>

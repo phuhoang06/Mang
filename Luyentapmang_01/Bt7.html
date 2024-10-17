@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Khởi tạo mảng 10 phần tử
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Bạn có thể thay đổi các giá trị này
+  let V = 5; // Phần tử cần tìm và xóa, bạn có thể thay đổi giá trị này
+
+  // Tìm và xóa phần tử V khỏi mảng
+  let index = arr.indexOf(V);
+  if (index !== -1) {
+    // Dịch các phần tử bên phải V sang vị trí của V
+    for (let i = index; i < arr.length - 1; i++) {
+      arr[i] = arr[i + 1];
+    }
+    // Gán 0 cho phần tử cuối cùng của mảng
+    arr[arr.length - 1] = 0;
+    console.log("V is in the array and has been removed");
+  } else {
+    console.log("V is not in the array");
+  }
+
+  // In mảng sau khi xử lý
+  console.log(arr);
+
+</script>
+</body>
+</html>
