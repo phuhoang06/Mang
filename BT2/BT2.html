@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro Game</title>
+</head>
+<body>
+<div id="carogame"></div>
+<button onclick="ChangeValue()">Change Value</button>
+
+<script>
+    let b = document.getElementById('carogame');
+    let board = [];
+    let currentPlayer = 'o'; // Bắt đầu với 'o'
+    const size = 5;
+
+    // Khởi tạo mảng hai chiều cho bảng trò chơi
+    for (let i = 0; i < size; i++) {
+        board[i] = new Array(size).fill('(.)');
+    }
+
+    // Hiển thị bảng trò chơi
+    function renderBoard() {
+        let data = '';
+        for (let i = 0; i < size; i++) {
+            data += '<br>';
+            for (let j = 0; j < size; j++) {
+                data += board[i][j] + '&ensp;';
+            }
+        }
+        b.innerHTML = data;
+    }
+
+    // Kiểm tra điều kiện thắng
+    function checkWin(x, y, player) {
+        // Kiểm tra hàng ngang
+        let horizontal = 0;
+        for (let j = 0; j < size; j++) {
+            if (board[x][j] === player) {
+                horizontal++;
+                if (horizontal === 3) return true; // Kiểm tra 3 ô liên tiếp
+            } else {
+                horizontal = 0; // Reset nếu không liên tiếp
+            }
+        }
+
+        // Kiểm tra hàng dọc
+        let vertical = 0;
+        for (let i = 0; i < size; i++) {
+            if (board[i][y] === player) {
+                vertical++;
+                if (vertical === 3) return true; // Kiểm tra 3 ô liên tiếp
+            } else {
+                vertical = 0; // Reset nếu không liên tiếp
+            }
+        }
+
+        // Kiểm tra đường chéo chính (từ trên trái xuống dưới phải)
+        let diagonal1 = 0;
+        for (let i = -2; i <= 2; i++) { // Kiểm tra trong phạm vi 3 ô từ vị trí hiện tại
+            if (x + i >= 0 && x + i < size && y + i >= 0 && y + i < size && board[x + i][y + i] === player) {
+                diagonal1++;
+                if (diagonal1 === 3) return true; // Kiểm tra 3 ô liên tiếp
+            } else {
+                diagonal1 = 0; // Reset nếu không liên tiếp
+            }
+        }
+
+        // Kiểm tra đường chéo phụ (từ trên phải xuống dưới trái)
+        let diagonal2 = 0;
+        for (let i = -2; i <= 2; i++) { // Kiểm tra trong phạm vi 3 ô từ vị trí hiện tại
+            if (x + i >= 0 && x + i < size && y - i >= 0 && y - i < size && board[x + i][y - i] === player) {
+                diagonal2++;
+                if (diagonal2 === 3) return true; // Kiểm tra 3 ô liên tiếp
+            } else {
+                diagonal2 = 0; // Reset nếu không liên tiếp
+            }
+        }
+
+        return false;
+    }
+
+    // Sự kiện khi nhấn nút Change Value
+    function ChangeValue() {
+        let positionX = parseInt(prompt("Enter the position of x (0-4):"));
+        let positionY = parseInt(prompt("Enter the position of y (0-4):"));
+
+        // Kiểm tra giá trị hợp lệ
+        if (isNaN(positionX) || isNaN(positionY) || positionX < 0 || positionX >= size || positionY < 0 || positionY >= size) {
+            alert("Invalid position, please enter values between 0 and 4.");
+            return;
+        }
+
+        // Kiểm tra ô đã được điền chưa
+        if (board[positionX][positionY] !== '(.)') {
+            alert("This position is already taken. Choose another one.");
+            return;
+        }
+
+        // Đặt giá trị cho ô hiện tại
+        board[positionX][positionY] = currentPlayer;
+
+        // Kiểm tra người chơi hiện tại có thắng không
+        if (checkWin(positionX, positionY, currentPlayer)) {
+            alert(currentPlayer + " wins!");
+            // Reset game sau khi thắng
+            resetGame();
+            return;
+        }
+
+        // Chuyển lượt chơi
+        currentPlayer = (currentPlayer === 'o') ? 'x' : 'o';
+
+        // Hiển thị lại bảng sau khi cập nhật
+        renderBoard();
+    }
+
+    // Khởi tạo lại trò chơi sau khi có người thắng
+    function resetGame() {
+        for (let i = 0; i < size; i++) {
+            board[i].fill('(.)');
+        }
+        currentPlayer = 'o'; // Bắt đầu lại với 'o'
+        renderBoard();
+    }
+
+    // Hiển thị bảng trò chơi lần đầu
+    renderBoard();
+</script>
+</body>
+</html>
