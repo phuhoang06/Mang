@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = ['c', 's', 'c', '2', '6', '1' ]
+  let n = a.length;
+  let x = [];
+  for (let i = 0; i < n/2; i++) {
+    x = a[i]
+    a[i] = a[n-i-1]
+    a[n-i-1] = x
+
+  }
+  console.log(a)
+</script>
+</body>
+</html>

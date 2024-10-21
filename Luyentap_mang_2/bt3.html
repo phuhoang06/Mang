@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Khai báo mảng ký tự
+  let charArray = ['a', '1', 'b', '2', 'c', '3', 'd', '4', 'e', '5']; // Bạn có thể thay đổi các giá trị này
+
+  // Hàm đếm số ký tự số trong mảng
+  function countDigits(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (!isNaN(array[i]) && array[i] !== ' ') {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  // Gọi hàm và hiển thị kết quả
+  let digitCount = countDigits(charArray);
+  console.log("Số ký tự số trong mảng là:", digitCount);
+
+</script>
+</body>
+</html>

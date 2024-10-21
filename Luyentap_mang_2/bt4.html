@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Hàm đếm số từ trong chuỗi
+  function countWords(str) {
+    // Loại bỏ khoảng trắng ở đầu và cuối chuỗi, sau đó tách chuỗi thành các từ
+    let words = str.trim().split(/\s+/);
+    // Trả về số lượng từ
+    return words.length;
+  }
+
+  // Chuỗi cần đếm số từ
+  let text = "Viết một chương trình để đếm số từ trong một chuỗi";
+
+  // Gọi hàm và hiển thị kết quả
+  let wordCount = countWords(text);
+  console.log("Số từ trong chuỗi là:", wordCount);
+
+</script>
+</body>
+</html>

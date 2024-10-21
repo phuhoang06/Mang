@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b5c9d88-c531-49e9-9645-800a6a8e5a84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/BT4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/Bt5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/Bt6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentapmang_01/Bt7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/BT5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/BT6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +56,8 @@
     "JavaScript Debug.BT2.html.executor": "Run",
     "JavaScript Debug.BT3.html.executor": "Run",
     "JavaScript Debug.BT4.html.executor": "Run",
+    "JavaScript Debug.BT5.html.executor": "Run",
+    "JavaScript Debug.BT6.html.executor": "Debug",
     "JavaScript Debug.Bt5.html.executor": "Run",
     "JavaScript Debug.Bt6.html.executor": "Debug",
     "JavaScript Debug.TH1.html.executor": "Run",
@@ -64,6 +65,9 @@
     "JavaScript Debug.TH3.html.executor": "Run",
     "JavaScript Debug.TH4.html.executor": "Run",
     "JavaScript Debug.TH5.html.executor": "Run",
+    "JavaScript Debug.bt1.html.executor": "Run",
+    "JavaScript Debug.bt2.html.executor": "Run",
+    "JavaScript Debug.bt4.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "disable.download.node.interpreter.editor.notification": "true",
     "git-widget-placeholder": "main",
@@ -95,7 +99,9 @@
       <workItem from="1729073318162" duration="878000" />
       <workItem from="1729127641293" duration="5826000" />
       <workItem from="1729137035020" duration="1998000" />
-      <workItem from="1729146880404" duration="3735000" />
+      <workItem from="1729146880404" duration="5155000" />
+      <workItem from="1729152985175" duration="2569000" />
+      <workItem from="1729492028838" duration="1572000" />
     </task>
     <servers />
   </component>

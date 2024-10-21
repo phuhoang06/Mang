@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Doi ki tu '-' thanh '_' trong mang
+  function replaceHyphens(array) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === '-') {
+        array[i] = '_';
+      }
+    }
+    return array;
+  }
+  // Nhap du lieu tu ban phim
+  function getCharacterArray() {
+    let input = prompt("Nhập các ký tự, cách nhau bằng dấu phẩy:");
+    let charArray = input.split(',');
+    return charArray;
+  }
+// Gọi hàm
+  let charArray = getCharacterArray();
+  charArray = replaceHyphens(charArray);
+  console.log(charArray);
+
+
+</script>
+</body>
+</html>
