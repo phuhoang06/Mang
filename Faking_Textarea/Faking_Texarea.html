@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung vui</title>
+  <script>
+    let a = ['T', 'Ô', 'I', 'L', 'À', 'M', 'Ộ', 'T', 'H', 'Ằ', 'N', 'G','N', 'G', 'U'];
+    let index = 0; // Dùng để theo dõi vị trí ký tự trong mảng
+
+    // Hàm xử lý khi người dùng nhấn phím
+    function typetextarea(e) {
+      let textarea = document.f.txt; // Truy xuất textarea
+
+      // Ngăn việc hiển thị các ký tự gõ phím bình thường (không để nhập từ bàn phím)
+      e.preventDefault();
+
+      // Nếu đã đến cuối mảng, reset lại index và textarea
+      if (index === a.length) {
+        textarea.value = ''; // Xóa nội dung trong textarea
+        index = 0; // Reset index về 0 để bắt đầu lại từ đầu
+      }
+
+      // Thêm ký tự tiếp theo từ mảng `a` vào textarea
+      textarea.value += a[index];
+      index++; // Tăng chỉ số để lấy ký tự tiếp theo
+    }
+
+    // Lắng nghe sự kiện 'keydown' để thực hiện hành động khi người dùng nhấn phím
+    window.addEventListener('keydown', typetextarea);
+
+  </script>
+</head>
+<body>
+<center>
+  <h2>Type anthing slowly</h2>
+  <form name="f">
+    <textarea name="txt" rows="10" cols="40" onkeydown="typetextarea()"></textarea>
+  </form>
+</center>
+</body>
+</html>

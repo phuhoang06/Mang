@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b5c9d88-c531-49e9-9645-800a6a8e5a84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/BT5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/BT6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyentap_mang_2/bt4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faking_Textarea/Faking_Texarea.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +55,7 @@
     "JavaScript Debug.BT6.html.executor": "Debug",
     "JavaScript Debug.Bt5.html.executor": "Run",
     "JavaScript Debug.Bt6.html.executor": "Debug",
+    "JavaScript Debug.Faking_Texarea.html.executor": "Run",
     "JavaScript Debug.TH1.html.executor": "Run",
     "JavaScript Debug.TH2.html.executor": "Run",
     "JavaScript Debug.TH3.html.executor": "Run",
@@ -101,7 +97,10 @@
       <workItem from="1729137035020" duration="1998000" />
       <workItem from="1729146880404" duration="5155000" />
       <workItem from="1729152985175" duration="2569000" />
-      <workItem from="1729492028838" duration="1572000" />
+      <workItem from="1729492028838" duration="2303000" />
+      <workItem from="1729498347647" duration="2617000" />
+      <workItem from="1729502370681" duration="696000" />
+      <workItem from="1729519456193" duration="1325000" />
     </task>
     <servers />
   </component>
